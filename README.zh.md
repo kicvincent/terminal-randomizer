@@ -1,4 +1,4 @@
-# 中文说明（Chinese
+# 中文说明（Chinese）
 
 &nbsp;
 
