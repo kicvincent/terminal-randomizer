@@ -1,0 +1,19 @@
+{
+  "profiles": {
+    "list": [
+      {
+        "name": "Alpine",
+        "guid": "{00000000-0000-0000-0000-000000000001}"
+      },
+      {
+        "name": "Debian",
+        "guid": "{00000000-0000-0000-0000-000000000002}"
+      }
+    ]
+  },
+  "schemes": [
+    { "name": "OneDark" },
+    { "name": "Gruvbox" },
+    { "name": "Solarized Dark" }
+  ]
+}

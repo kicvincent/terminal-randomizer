@@ -1,0 +1,19 @@
+# VS Code local settings
+.vscode/
+
+# Windows / macOS
+Thumbs.db
+.DS_Store
+
+# PowerShell / logs / secrets
+*.log
+*.secret
+*.env
+secrets.json
+
+# Node / Python caches (if any)
+node_modules/
+__pycache__/
+
+# Git metadata backups
+*.bak

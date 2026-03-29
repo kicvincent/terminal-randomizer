@@ -1,0 +1,17 @@
+name: Lint PowerShell
+on:
+  pull_request:
+    paths:
+      - 'scripts/**'
+      - '.github/**'
+jobs:
+  lint:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup PowerShell
+        uses: PowerShell/PowerShell@v1
+      - name: Install PSScriptAnalyzer
+        run: Install-Module -Name PSScriptAnalyzer -Force -Scope CurrentUser
+      - name: Run PSScriptAnalyzer
+        run: Invoke-ScriptAnalyzer -Path ./scripts -Recurse -Severity Warning
